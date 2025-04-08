@@ -1,0 +1,22 @@
+# openssl.cnf básico para desarrollo
+[ req ]
+default_bits       = 2048
+default_md         = sha256
+distinguished_name = req_distinguished_name
+x509_extensions    = v3_ca
+prompt             = no
+
+[ req_distinguished_name ]
+C  = AR
+ST = Buenos Aires
+L  = CABA
+O  = ITS
+OU = Desarrollo
+CN = localhost
+
+[ v3_ca ]
+subjectAltName = @alt_names
+basicConstraints = CA:true
+
+[ alt_names ]
+DNS.1 = localhost
