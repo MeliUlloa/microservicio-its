@@ -1,6 +1,5 @@
 // @ts-check
 import eslint from '@eslint/js';
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
@@ -31,6 +30,7 @@ export default tseslint.config(
       '@typescript-eslint/no-unsafe-argument': 'off',
       '@typescript-eslint/no-unsafe-assignment': 'off',
       '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/recommended-type-checked': 'warn',
     },
   },
 );
