@@ -8,3 +8,6 @@ import { AppService } from './app.service';
   providers: [AppService],
 })
 export class AppModule {}
+
+// Este es el módulo raíz del microservicio.
+// Registra el controlador y el servicio.
